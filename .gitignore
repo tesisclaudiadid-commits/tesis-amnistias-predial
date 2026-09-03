@@ -1,0 +1,11 @@
+# Archivos temporales
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+
+# Datos: se conservan fuera de GitHub
+datos/originales/**
+datos/panel/**
+!datos/README.md
