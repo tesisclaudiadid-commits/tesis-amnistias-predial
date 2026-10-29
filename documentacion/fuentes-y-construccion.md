@@ -32,4 +32,4 @@ Se almacenan en proporciones. Un valor negativo de y_car indica disminución de 
 
 ## Estado de validación
 
-Se comprobaron las fórmulas con datos de prueba, incluyendo signos, años no consecutivos, denominadores cero, duplicados y reejecución. La ejecución completa de la nueva versión con los archivos originales requiere Google Drive y está pendiente. D_it, covariables y estimación causal también están pendientes.
+Se comprobaron las fórmulas con datos de prueba, incluyendo signos, años no consecutivos, denominadores cero, duplicados y reejecución. El 29 de octubre de 2026 se descargó de Drive el panel exportado con las cuatro variables: 20.957 filas y 18 columnas. Se verificaron las cuatro fórmulas fila a fila, incluidos ausentes y el rezago calendario del recaudo, y la ausencia de duplicados municipio-año. El Excel original se publica sin modificaciones en `datos/panel/Panel_Inicial_2007_2025.xlsx`. Esta revisión no equivale a una auditoría de los datos fuente. D_it, covariables y estimación causal también están pendientes.

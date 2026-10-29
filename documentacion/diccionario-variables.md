@@ -27,4 +27,4 @@ Los valores monetarios se expresan en pesos corrientes. Los valores ausentes se 
 
 Los denominadores deben ser positivos. No se imputan ausentes ni se recortan extremos. Se señalan componentes negativos y cumplimiento mayor que uno para revisión. `y_car` sustituye la antigua reducción de cartera `y_R`: tiene signo contrario. El crecimiento de 2012 queda ausente porque el recaudo disponible empieza en 2012. Las carteras de cierre provienen del cierre contable observado de cada año, incluido 2025; no se necesita un archivo separado de 2026 para ese cierre.
 
-La variable D_it, las covariables y las estimaciones causales quedan pendientes. La actualización se comprobó con casos de prueba; su ejecución con los originales de Drive queda pendiente.
+La variable D_it, las covariables y las estimaciones causales quedan pendientes. El panel exportado desde Drive el 29 de octubre de 2026 está publicado en `datos/panel/Panel_Inicial_2007_2025.xlsx`. Se verificaron las cuatro fórmulas en sus 20.957 filas y la unicidad municipio-año.

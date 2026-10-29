@@ -5,7 +5,8 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Datos: se conservan fuera de GitHub
+# Originales y paneles no publicados
 datos/originales/**
 datos/panel/**
 !datos/README.md
+!datos/panel/Panel_Inicial_2007_2025.xlsx
