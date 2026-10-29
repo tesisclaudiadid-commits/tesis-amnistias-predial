@@ -21,9 +21,15 @@ Este documento resume la implementación que contiene actualmente `notebooks/Con
 - `C_CHIP` para el año (t) es `C_CIERRE_CHIP` del año (t-1).
 - La versión actual no imputa ausentes, no reemplaza ausentes por cero y no elimina valores extremos.
 
-## Variables de resultado presentes en el cuaderno
+## Cuatro variables de interés
 
-- `y_C = R_TOT / (C_CHIP + L_CHIP)`: cumplimiento predial global observado.
-- `y_R = (C_CHIP - C_CIERRE_CHIP) / C_CHIP`: reducción neta observada de la cartera.
+- `y_cum = R_TOT / (C_CHIP + L_CHIP)`.
+- `y_deu = C_CIERRE_CHIP / L_CHIP`.
+- `y_rec = (R_TOT - R_TOT_PREVIO) / R_TOT_PREVIO`.
+- `y_car = (C_CIERRE_CHIP - C_CHIP) / C_CHIP`.
 
-La metodología vigente también contempla el cambio porcentual del recaudo total. Su incorporación al código y la actualización de la notación se harán en una versión posterior.
+Se almacenan en proporciones. Un valor negativo de y_car indica disminución de cartera. Los denominadores no positivos dejan resultados ausentes. No se imputan datos ni se eliminan extremos. El rezago de recaudo exige el año calendario anterior; el crecimiento de 2012 no se calcula sin recaudo de 2011. El cierre CHIP de 2025 ya es el saldo final necesario para y_deu y y_car en ese año.
+
+## Estado de validación
+
+Se comprobaron las fórmulas con datos de prueba, incluyendo signos, años no consecutivos, denominadores cero, duplicados y reejecución. La ejecución completa de la nueva versión con los archivos originales requiere Google Drive y está pendiente. D_it, covariables y estimación causal también están pendientes.
